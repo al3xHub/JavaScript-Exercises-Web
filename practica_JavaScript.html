@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="practica_JavaScript.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="./alertifyjs/css/alertify.min.css" />
+    <title>Práctica JavaScript</title>
+</head>
+<body>
+    <div class="menuLateral">
+        <header class="menuLateral-cabecera">
+            <h1>Práctica de JavaScript</h1>
+        </header>
+        <nav class="menuLateral-nav">
+            <ul class="menuLateral-menu">
+                <li>
+                    <a href="#" class="menu-link">
+                        <span class="menu-icono">&#127775;</span>
+                        <span class="menu-texto">Ejercicios</span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#">Ejercicio 17</a></li>
+                        <li><a href="#">Ejercicio 18</a></li>
+                        <li><a href="#">Ejercicio 19</a></li>
+                        <li><a href="#">Ejercicio 20</a></li>
+                        <li><a href="#">Ejercicio 21</a></li>
+                        <li><a href="#">Ejercicio 3</a></li>
+                        <li><a href="#">Ejercicio 6</a></li>
+                        <li><a href="#">Ejercicio 8</a></li>
+                        <li><a href="#">Ejercicio 10</a></li>
+                        <li><a href="#">Ejercicio 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section>
+        <div class="Ejercicios">
+            <div class="Ejercicios-17">   
+            </div>
+            <div class="Ejercicios-18">
+            </div>
+            <div class="Ejercicios-19">   
+            </div>
+            <div class="Ejercicios-20"> 
+                <h1 onclick="unClick('Click')">JavaScript Click</h1>
+                <h1 ondblclick="doble('Doble click')">JavaScript Doble Click</h1>
+                <script> function unClick(onclick)
+                    {
+                        alertify.alert("Se ha producido el evento "+onclick);
+                        
+                        
+                    }
+                    function doble(ondblclick)
+                    {
+                        alertify.alert("Se ha producido el evento "+ondblclick);
+                    }
+                </script>
+            </div>
+            <div class="Ejercicios-21">
+                <div class="cuadrado" id="cuadrado1" onmouseover=color1()></div>
+                <div class="cuadrado" id="cuadrado2" onmouseover=color2()></div>
+                <div class="cuadrado" id="cuadrado3" onmouseover=color3()></div>
+                <div class="cuadrado" id="cuadrado4" onmouseover=color4()></div>
+                <div class="cuadrado" id="cuadrado5" onmouseover=color5()></div>
+                
+                <script>
+                function color1(onmouseover)
+                    {
+                    document.body.style.backgroundColor='tomato';
+                    }
+                    function color2(onmouseover)
+                    {
+                    document.body.style.backgroundColor='beige';
+                    }
+                    function color3(onmouseover)
+                    {
+                    document.body.style.backgroundColor='rebeccapurple';
+                    }
+                    function color4(onmouseover)
+                    {
+                    document.body.style.backgroundColor='chartreuse';
+                    }
+                    function color5(onmouseover)
+                    {
+                    document.body.style.backgroundColor='khaki';
+                    }
+                </script>
+                    <style>
+                        .cuadrado
+                        {
+                        width: 50px; height: 50px; margin: 10px;
+                        border: 1px solid black;
+                        cursor: pointer;
+                        }
+
+                        #cuadrado1
+                        {
+                            background-color: tomato;
+                        }
+                        #cuadrado2
+                        {
+                            background-color: beige;
+                        }
+                        #cuadrado3
+                        {
+                            background-color: rebeccapurple;
+                        }
+                        #cuadrado4
+                        {
+                            background-color: chartreuse;
+                        }
+                        #cuadrado5
+                        {
+                            background-color: khaki;
+                        }
+                    </style>
+            </div>
+            <div class="Ejercicios-3"></div>
+            <div class="Ejercicios-6"></div>
+            <div class="Ejercicios-8"></div>
+            <div class="Ejercicios-10">
+                <h3>Pasa el ratón por encima del país para ver su capital</h3>
+                <h1><span onmouseenter="evento('España', 'Madrid')"><img src="./espana.png"/></span></h1>
+                <h1><span onmouseenter="evento('Portugal', 'Lisboa')"><img src="./portugal.png"/></span></h1>
+                <h1><span onmouseenter="evento('Francia', 'París')"><img src="./francia.png"/></span></h1>
+                <h1><span onmouseenter="evento('Italia', 'Roma')"><img src="./italia.png"/></span></h1>
+                <script>
+                    function evento(pais,capital)
+                    {
+                    alert("La capital de "+pais+" es: "+capital);
+                    }
+                </script>
+            </div>
+            <div class="Ejercicios-2">
+                <style>.saludo {
+                    font-family:'Comic Sans MS';
+                    background-color: blueviolet;
+                    font-size: 80px;
+                    padding-left: 20%;
+                  }
+                </style>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script language="javascript" type="text/javascript" src="practica_JavaScript.js"></script>
+    <script src="./alertify.js"></script>
+</body>
+</html>

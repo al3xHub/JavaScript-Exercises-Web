@@ -1,0 +1,67 @@
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.menuLateral 
+{
+    background-color: #45534f;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+}
+.menuLateral-menu 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menuLateral-menu li a 
+{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.submenu li a:hover 
+{
+    background-color: #283330;
+}
+.menuLateral-menu li .submenu 
+{
+    display:contents;
+    padding-left: 20px;
+}
+.menuLateral-menu li .submenu li:before 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #fff;
+    display: none;
+}
+.submenu li a:hover 
+{
+    display: block;
+}
+section
+{
+padding-left: 20%;
+
+}
+.Ejercicios > div {
+    display: none;
+}
+
+
+
+
+
